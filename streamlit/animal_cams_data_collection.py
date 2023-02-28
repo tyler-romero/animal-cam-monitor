@@ -44,7 +44,7 @@ CAMS = {
         website_link="https://sdzsafaripark.org/cams/polar-cam",
     ),
     "Ape": AnimalCam(
-        stream_link="https://zssd-baboon.preview.api.camzonecdn.com/previewimage",
+        stream_link="https://ape.preview.api.camzonecdn.com/previewimage",
         website_link="https://sdzsafaripark.org/cams/ape-cam",
     ),
 }
