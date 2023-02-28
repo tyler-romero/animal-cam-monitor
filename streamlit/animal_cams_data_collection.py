@@ -57,10 +57,10 @@ for animal, animal_cam in CAMS.items():
     detector_name = f"is_{animal_cleaned}_present"
     animal_cam.detector = gl.get_or_create_detector(name=detector_name, query=query)
     print(f"{animal} cam: {animal_cam}")
-print("Detectors initialized")
+print("Detectors initialized, collecting 5k images...")
 
 
-while True:
+for i in range(1000):  # 5 animal cams * 1000 iterations = 5k images collected
     start = time.time()
 
     # Submit queries async
