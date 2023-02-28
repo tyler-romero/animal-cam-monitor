@@ -74,5 +74,4 @@ for i in range(1000):  # 5 animal cams * 1000 iterations = 5k images collected
     most_likely_animal: str = max(CAMS, key=lambda k: (CAMS[k].probability_present, k))
     print("Most likely animal:", most_likely_animal)
 
-    while (time.time() - start) < 120:
-        time.sleep(1)
+    time.sleep(60 * 12)
